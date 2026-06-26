@@ -1,2 +1,7 @@
 geopandas
 pandas
+ipykernel
+matplotlib
+seaborn
+scikit-learn
+imblearn
