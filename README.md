@@ -19,24 +19,16 @@ The project integrates Geographic Information Systems (GIS) preprocessing with s
 ```text
 .
 ├── data/
-│   ├── raw/              # Original GIS datasets
-│   ├── processed/        # Processed datasets ready for training
-│   └── exports/          # CSV files generated from GIS processing
+│   └── joined_all_tables.csv              # Extracted data
 │
-├── notebooks/            # Exploratory analysis and experiments
+├── notebook.ipynb            # Exploratory analysis and model training
 │
-├── src/
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── utils.py
-│
-├── models/               # Saved trained models
-│
-├── results/              # Metrics, plots and confusion matrices
+├── featureExtract/
+│   ├── extract_data.py   # Allows the user to extract the data from a gpkg file
+│   └── join_data.py      # Allows the user to join the data into a single file
 │
 ├── requirements.txt
+├── install.bat           # Creates virtual environment and installs dependencies
 └── README.md
 ```
 
